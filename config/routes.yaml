@@ -1,3 +1,55 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+especialidades:
+  path: /especialidades
+  controller: App\Controller\EspecialidadeController::buscarTodos
+  methods:
+    - GET
+especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadeController::buscarUM
+  methods:
+    - GET
+criar_especialidade:
+  path: /especialidades
+  controller: App\Controller\EspecialidadeController::novo
+  methods:
+    - POST
+remover_especialidades:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadeController::deletar
+  methods:
+    - DELETE
+atualiza_especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadeController::update
+  methods:
+    - PUT
+medicos:
+  path: /medicos
+  controller: App\Controller\MedicoController::buscarTodos
+  methods:
+    - GET
+medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicoController::buscarUM
+  methods:
+    - GET
+remover_medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicoController::deletar
+  methods:
+    - DELETE
+criar_medico:
+  path: /medicos
+  controller: App\Controller\MedicoController::novo
+  methods:
+    - POST
+atualiza_medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicoController::update
+  methods:
+    - PUT
+
+
